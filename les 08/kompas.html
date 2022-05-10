@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les 08 - Kompas oefening</title>
+
+    <link ref="stylesheet" type="text/css" href="CSS/stijl.css"> 
+</head>
+<body>
+    <div class="compass"></div>
+    <div class="label noord">Noord</div>
+    <div class="label oost">Oost</div>
+    <div class="label zuid">Zuid</div>
+    <div class="label west">West</div>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .compass{
+        background: url(kompas.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh;
+    }
+    .label{
+        font-family: 'Indie Flower', cursive;
+        font-size: 28px;
+        color: white;
+    }
+    .noord{
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translate(0, -50%);
+    }
+    .oost{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform:
+    }
+    .zuid{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+    }
+    .west{
+        position: absolute;
+        top: 50%;
+        left: 10px;
+    }
+    
+</style>
