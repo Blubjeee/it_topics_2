@@ -4,13 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Ervaring</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Mijn portfolio</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link">Startpagina</a>
+                    <a href="cv.html" class="nav-item nav-link">Curricilum vitea</a>
+                    <a href="ervaring.html" class="nav-item nav-link active">Ervaring</a>
+                    <a href="hobby's-interesses.html" class="nav-item nav-link">Hobby's & interesses</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+      </nav>
     <h1>Ervaring</h1>
     <hr>
     <div>Op deze pagina gaat u mijn ervaringen vinden.</div>
     <br>
+
+
+
+
+      <div class="container" id="timeline">
+        <div id="timeline-header">
+          <h1>TIJDLIJN</h1>
+        </div>
+        <div class="col-xs-6" id="start-left">
+
+        </div>
+        <div class="col-xs-6" id="start-right">
+        </div>
+        <div class="col-xs-6 time-left">
+          <div class="date">
+            <h1>2016</h1>
+          </div>
+          <div class="date-details">
+            <h3>Job Title</h3>
+            <p>February 2015 - Present</p>
+          </div>
+          <div class="inner-left">
+          </div>
+        </div>
+
+        <div class="col-xs-6 time-right">
+        </div>
+        <!-- Break -->
+        <div class="col-xs-6 time-left">
+        </div>
+
+        <div class="col-xs-6 time-right">
+          <div class="date">
+            <h2>2014</h2>
+          </div>
+          <div class="date-details">
+            <h3>Job Title</h3>
+            <p>January 2014 - February 2015</p>
+          </div>
+          <div class="inner-right">
+          </div>
+        </div>
+        <!-- Break -->
+        <div class="col-xs-6 time-left">
+          <div class="date">
+            <h2>2013</h2>
+          </div>
+          <div class="date-details">
+            <h3>Job Title</h3>
+            <p>March 2013 - January 2016</p>
+          </div>
+          <div class="inner-left">
+          </div>
+        </div>
+
+        <div class="col-xs-6 time-right">
+        </div>
+    </div>
+
     <table border="2" cellspacing="4" cellpadding="2">
         <tr>
             <td><strong>Functie</strong></td>
@@ -51,5 +130,111 @@
     </table>
     <hr>
     <a href="index.html">Terug naar start</a>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+<style>
+    body{
+      background-color: gainsboro;
+    }
+
+#timeline {
+  position: relative;
+  height: 100%;
+  padding: 0 0 40px;
+  
+  
+}
+
+#timeline-header{
+  position: relative;
+  text-align: center;
+  border-width: 4px;
+  border-color: #fff;
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+#start-left {
+  position: relative;
+  left: 0;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-radius: 0 60px 0 0;
+  height: 80px;
+  
+}
+
+#start-right {
+  position: relative;
+  right: 0;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-radius: 60px 0 0 0;
+  height: 80px;
+  
+}
+
+/* Left side */
+
+.time-left {
+  border-right: 2px solid #fff;
+  height: 200px;
+  padding: 0 15px 0 0;
+  text-align: right;
+}
+
+.time-left .date {
+  width: 100%;
+  padding-right: 15px;
+}
+
+.inner-left {
+  width: 20px;
+  height: 95%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  border-top: 4px solid #fff;
+  border-color: #fff;
+}
+
+/* Right Side */
+
+.time-right {
+  border-left: 2px solid #fff;
+  height: 200px;
+  padding: 0 0 0 15px;
+  text-align: left;
+}
+
+.inner-right {
+  width: 20px;
+  height: 95%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  border-top: 4px solid #fff;
+  border-color: #fff;
+}
+
+.time-right .date {
+  width: 100%;
+  padding-left: 15px;
+}
+
+/* Media query to help keep the Job Titles from overflowing */
+
+@media only screen and (max-width: 750px) {
+
+  .date-details h3 {
+    font-size: 1.35rem;
+  }
+
+}
+  </style>
