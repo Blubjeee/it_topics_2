@@ -33,38 +33,46 @@
     <div class="content">
     <div>Op deze pagina gaat u mijn curricilum vitea vinden.</div>
     <h2>Opleidingen</h2>
-    <table border="2" cellpadDing="2" cellspacing="4">
-        <tr>
-            <td><strong>Opleiding</strong></td>
-            <td><strong>School</strong></td>
-            <td><strong>Locatie</strong></td>
-            <td><strong>Periode</strong></td>
-        </tr>
-        <tr>
-            <td>Systeem- en netwerkbeheer</td>
-            <td>Thomas more</td>
-            <td>Geel</td>
-            <td>Sept. 2021 - Heden</td>
-        </tr>
-        <tr>
-            <td>Energietechnologie</td>
-            <td>Thomas more</td>
-            <td>Geel</td>
-            <td>Sept. 2020 - Aug. 2021</td>
-        </tr>
-        <tr>
-            <td>Electro mechanica</td>
-            <td>Githo</td>
-            <td>Nijlen</td>
-            <td>Jan. 2018 - Juni 2020</td>
-        </tr>
-        <tr>
-            <td>Industriële wetenschappen</td>
-            <td>Githo</td>
-            <td>Nijlen</td>
-            <td>Sep. 2014 - Dec. 2017</td>
-        </tr>
-    </table>
+    <div class="container">                          
+        <div class="row">
+            <div class="col">
+                <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                    <div class="timeline-step">
+                        <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="">
+                            <div class="inner-circle"></div>
+                            <p class="h6 mt-3 mb-1">Sep. 2021 - Heden</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">Systeem- en netwerkbeheer</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">Thomas More, Geel</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="">
+                            <div class="inner-circle"></div>
+                            <p class="h6 mt-3 mb-1">Sep. 2020 - Aug. 2021</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">Energietechnologie</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">Thomas More, Geel</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="">
+                            <div class="inner-circle"></div>
+                            <p class="h6 mt-3 mb-1">Jan. 2018 - Juni 2020</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">Electro mechanica</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">Githo nijlen, Nijlen</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="">
+                            <div class="inner-circle"></div>
+                            <p class="h6 mt-3 mb-1">Sep. 2014 - Dec. 2017</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">Industriële wetenschappen</p>
+                            <p class="h6 text-muted mb-0 mb-lg-0">Githo nijlen, Nijlen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <h2>Vaardigheden</h2>
     <h5>Windows</h5>
     <div class="container" style="float: left;">
@@ -155,4 +163,66 @@
     .content{
         margin: 1rem;
     }
+
+    
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #3b82f6;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
   </style>
