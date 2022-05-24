@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Curriculum vitea</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Mijn portfolio</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link">Startpagina</a>
+                    <a href="cv.html" class="nav-item nav-link active">Curricilum vitea</a>
+                    <a href="ervaring.html" class="nav-item nav-link">Ervaring</a>
+                    <a href="hobby's-interesses.html" class="nav-item nav-link">Hobby's & interesses</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+      </nav>
+
     <h1>Curriculum vitea</h1>
     <hr>
+    <div class="content">
     <div>Op deze pagina gaat u mijn curricilum vitea vinden.</div>
     <h2>Opleidingen</h2>
     <table border="2" cellpadDing="2" cellspacing="4">
@@ -44,49 +66,93 @@
         </tr>
     </table>
     <h2>Vaardigheden</h2>
-    <table border="2" cellpadding="2" cellspacing="4">
-        <tr>
-            <td><strong>Vaardigheid</strong></td>
-            <td><strong>Level (1-5)</strong></td>
-        </tr>
-        <tr>
-            <td>Windows</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>Linux</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Microsoft SQL Server</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>HTML</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>Powershell</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Solidworks</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>SEE Electrical</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>TIA Portal</td>
-            <td>4</td>
-        </tr>
-    </table>
-    <hr>
-    <a href="index.html">Terug naar start</a>
+    <h5>Windows</h5>
+    <div class="container" style="float: left;">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+        </div>
+    </div>
+    <br>
+    <h5>Linux</h5>
+    <div class="container" style="float: left;">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%">60%</div>
+        </div>
+    </div>
+    <br>
+    <h5>Microsoft SQL Server</h5>
+    <div class="container" style="float: left;">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%">80%</div>
+        </div>
+    </div>
+    <br>
+    <h5>HTML</h5>
+    <div class="container" style="float: left;">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+        </div>
+    </div>
+    <br>
+    <h5>CSS</h5>
+    <div class="container" style="float: left;">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%">65%</div>
+        </div>
+    </div>
+    <br>
+    <h5>Python</h5>
+    <div class="container" style="float: left;">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
+        </div>
+    </div>
+    <br>
+    <h5>Powershell</h5>
+    <div class="container" style="float: left;">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%">60%</div>
+        </div>
+    </div>
+    <br>
+    <h5>Solidworks</h5>
+    <div class="container" style="float: left;">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 55%">55%</div>
+        </div>
+    </div>
+    <br>
+    <h5>SEE Electrical</h5>
+    <div class="container" style="float: left;">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%">50%</div>
+        </div>
+    </div>
+    <br>
+    <h5>TIA Portal</h5>
+    <div class="container" style="float: left;">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%">65%</div>
+        </div>
+    </div>
+    <br>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+<style>
+    body{
+      background-color: gainsboro;
+    }
+    .portret{
+      margin: 2rem;
+      width: 20%;
+      border-radius: 1rem;
+    }  
+    h5{
+        margin: 1rem;
+    }
+    .content{
+        margin: 1rem;
+    }
+  </style>
