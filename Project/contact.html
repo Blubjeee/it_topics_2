@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Mijn portfolio</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link">Startpagina</a>
+                    <a href="cv.html" class="nav-item nav-link">Curricilum vitea</a>
+                    <a href="ervaring.html" class="nav-item nav-link">Ervaring</a>
+                    <a href="hobby's-interesses.html" class="nav-item nav-link">Hobby's & interesses</a>
+                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                </div>
+            </div>
+        </div>
+      </nav>
     <h1>Contact</h1>
     <hr>
+    <div class="content">
     <h3>Voor enkele vragen:</h3>
     <div>
         <label for="naam">Naam:
@@ -30,12 +51,23 @@
             <textarea id="vraag" name="vraag"></textarea>
         </label>
     </div>
+    <br>
     <h4>U kan mij verder bereiken via:</h4>
     <div>Telefoon: bel naar 0487135427 of druk hier<a href="tel:0487135427"><img src="../Project/img/telefoon_logo.jpg" alt="telefoon_logo" width="20"></a></div>
     <div>Mail: stuur een mail naar ilya.peeters@gmail.com of druk hier<a href="mailto:ilya.peeters@gmail.com"><img src="../Project/img/mail_logo.jpg" alt="mail_logo" width="25"></a></div>
     <div>LinkedIn: druk hier om naar mijn linkedIn te gaan <a href="https://linkedin.com" target="_blank"><img src="../Project/img/Linkedin-logo-transparent-PNG.png" alt="linkedin_logo" width="25"></a></div>
-    <hr>
-    <a href="index.html">Terug naar start</a>
-    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</div>
 </body>
 </html>
+<style>
+    body{
+    background-color: gainsboro;
+    }
+    img{
+    border-radius: 2rem;
+    }
+    .content{
+        margin: 1rem;
+    }
+    </style>
