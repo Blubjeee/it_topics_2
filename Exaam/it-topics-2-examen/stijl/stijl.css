@@ -17,7 +17,7 @@
 .IT_Owledge{
     color: #5599bb;
 }
-#aanbod{
+h2{
     clear: left;
 }
 th{
@@ -47,7 +47,6 @@ label{
 }
 input, select{
     margin-bottom: 10px;
-    width: 100%;
 }
 #disclaimer{
     size: 5px;
