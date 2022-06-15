@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Aanbod</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="../it-topics-2-examen/afbeeldingen/it_owledge.png" alt="it_owledge">IT Owledge</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="aanbod.html" class="nav-item nav-link active">Aanbod</a>
+                    <a href="inschrijven.html" class="nav-item nav-link">Inschrijven</a>
+                    <a href="overons.html" class="nav-item nav-link">Over ons</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <p><strong>IT Owledge staat voor je klaar met een compleet aanbod trainingen en opleidingen</strong></p>
+        <p><img src="../it-topics-2-examen/afbeeldingen/it_employees.jpg" alt="it_employees" style="float:left" id="it_employees"></p>
+        <div id="uitleg">
+            Sta jij aan het begin van jouw carrière als IT specialist en wil je jouw kennis en vaardigheden op professionele wijze ontwikkelen?
+            Dan kan je hier een praktijkgerichte training bij <span class="IT_Owledge">IT Owledge</span> voor volgen.
+            Maar ook wanneer je al een ervaren IT specialist bent en op de hoogte wilt blijven van de laatste ontwikkelingen, staat <span class="IT_Owledge">IT Owledge</span> voor je klaar.
+            Wij bieden trainingen, opleidingen en certificeringen aan voor verschillende platformen, systemen en programmeertalen en dat op verschillende niveaus.
+        </div>
+        <h2 id="aanbod">Aanbod</h2>
+        <table border="1" cellpadding="5px">
+            <tr>
+                <th>Opleiding</th>
+                <th>Hoofdvakken</th>
+                <th>Studievorm</th>
+                <th>Duur</th>
+                <th>Prijs</th>
+            </tr>
+            <tr>
+                <td>Development</td>
+                <td>C#,Java,PHP</td>
+                <td>Dag</td>
+                <td>2 Jaar</td>
+                <td>&euro;2.500,00</td>
+            </tr>
+            <tr>
+                <td>Netwerkbeheer</td>
+                <td>Linux,Windows,Cisco</td>
+                <td>Dag</td>
+                <td>2 Jaar</td>
+                <td>&euro;2.000,00</td>
+            </tr>
+            <tr>
+                <td>Business IT</td>
+                <td>Big Data, Data analyse,Project management</td>
+                <td>Dag</td>
+                <td>2 Jaar</td>
+                <td>&euro;2.750,00</td>
+            </tr>
+        </table>
+        <p>Vind u een opleiding interessant? Aarzel dan niet een haast je naar <a href="inschrijven.html">inschrijven</a> want vol is vol!</p>
+    </div>
+        
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+<style>
+    .content{
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #it_employees{
+        width: 400px;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 5px lightgray;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .uitleg{
+        margin: 50px;
+    }
+    .IT_Owledge{
+        color: #5599bb;
+    }
+    #aanbod{
+        clear: left;
+    }
+    th{
+        background-color: #343a40;
+        color: white;
+    }
+    tr:nth-child(odd){
+    background-color: lightgray;
+    }
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+    table{
+        box-shadow: 5px 5px 5px lightgray;
+        margin-bottom: 10px;
+    }
+    a:link{
+        color: #999999;
+    }
+    a:hover{
+        color: #5599bb;
+    }
+</style>
