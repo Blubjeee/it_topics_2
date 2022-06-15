@@ -5,11 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stijl/stijl.css">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Inschrijven</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="../it-topics-2-examen/afbeeldingen/it_owledge.png" alt="it_owledge">IT Owledge</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="aanbod.html" class="nav-item nav-link">Aanbod</a>
+                    <a href="inschrijven.html" class="nav-item nav-link active">Inschrijven</a>
+                    <a href="overons.html" class="nav-item nav-link">Over ons</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <form action="verwerk_inschrijving.html" method="post"></form>
+            <label for="voornaam">Voornaam</label><br>
+            <input type="text" id="voornaam" name="voornaam"><br>
+            <label for="achternaam">Achternaam</label><br>
+            <input type="text" id="achternaam" name="achternaam"><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="voorbeeld@gmail.com">
+            <p id="disclaimer">Uw email addres zal niet doorgegeven worden aan andere partijen</p>
+            <label for="opleiding">Opleiding</label><br>
+            <select name="opleiding" id="opleiding">
+                <option value="kieseenopleiding">-- Kies een opleiding --</option>
+                <option value="development">Development</option>
+                <option value="netwerkbeheer">Netwerkbeheer</option>
+                <option value="businessit">Business IT</option>
+            </select><br>
+            <input type="checkbox" id="voorwaarden" name="voorwaarden" value="voorwaarden">
+            <label id="voorwaarden" for="voorwaarden"> Ik ga akkoord met de voorwaarden</label><br>
+            <input id="inleveren" type="submit" id="inleveren" value="Schrijf je nu in!">
+          </form>
+          
+    </div>
 
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
